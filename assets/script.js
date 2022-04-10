@@ -10,9 +10,6 @@
 // WHEN I refresh the page
 // THEN the saved events persist
 
-var hour = "9:00";
-var timeBlock = document.querySelector("#hourbox")
-
 //DONE
 // WHEN I open the planner
 // THEN the current day is displayed at the top of the calendar
