@@ -13,7 +13,7 @@ var text3 = document.querySelector("#text-status3");
 var text4 = document.querySelector("#text-status4");
 var text5 = document.querySelector("#text-status5");
 var text6 = document.querySelector("#text-status6");
-var text7 = document.querySelector("#text-status7");
+var text7 = document.querySelector("#text-status7");    
 var text8 = document.querySelector("#text-status8");
 var text9 = document.querySelector("#text-status9");
 //done
@@ -73,35 +73,35 @@ var taskStatus = function() {
     } 
     if (currentTime > taskTime+4) {
         text5.classList.add("past");
-        } else if (currentTime === taskTime+4) {
+        } else if (currentTime == taskTime+4) {
             text5.classList.add("present");
         } else {
             text5.classList.add("future");  
     } 
     if (currentTime > taskTime+5) {
         text6.classList.add("past");
-        } else if (currentTime = taskTime+5) {
+        } else if (currentTime == taskTime+5) {
             text6.classList.add("present")
         } else {
             text6.classList.add("future");
     } 
     if (currentTime > taskTime+6) {
         text7.classList.add("past");
-        } else if (currentTime = taskTime+6) {
+        } else if (currentTime == taskTime+6) {
             text7.classList.add("present")
         } else {
             text7.classList.add("future");
     } 
     if (currentTime > taskTime+7) {
         text8.classList.add("past");
-        } else if (currentTime === taskTime+7) {
+        } else if (currentTime == taskTime+7) {
             text8.classList.add("present")
         } else {
             text8.classList.add("future");
     } 
     if (currentTime > taskTime+8) {
         text9.classList.add("past");
-        } else if (currentTime = taskTime+8) {
+        } else if (currentTime == taskTime+8) {
             text9.classList.add("present")
         } else {
             text9.classList.add("future");
@@ -113,7 +113,6 @@ taskStatus();
 //local storage object
 // WHEN I refresh the page
 // THEN the saved events persist
-var globalTest
 var saveBtn1 = document.querySelector("#saveBtnTask1");
 saveBtn1.addEventListener("click", function(event) {
     event.preventDefault();
@@ -123,6 +122,87 @@ saveBtn1.addEventListener("click", function(event) {
     localStorage.setItem("localStorageTestInfo", (localStorageTestInfo.taskDetail));    
   });
 text1.textContent = localStorage.getItem("localStorageTestInfo", "taskDetail");
+var saveBtn2 = document.querySelector("#saveBtnTask2");
+saveBtn2.addEventListener("click", function(event) {
+    event.preventDefault();
+    var localStorageTestInfo2 = {
+        taskDetail: text2.value.trim()
+    };
+    localStorage.setItem("localStorageTestInfo2", (localStorageTestInfo2.taskDetail));    
+  });
+text2.textContent = localStorage.getItem("localStorageTestInfo2", "taskDetail");
+var saveBtn3 = document.querySelector("#saveBtnTask3");
+saveBtn3.addEventListener("click", function(event) {
+    event.preventDefault();
+    var localStorageTestInfo3 = {
+        taskDetail: text3.value.trim()
+    };
+    localStorage.setItem("localStorageTestInfo3", (localStorageTestInfo3.taskDetail));    
+  });
+text3.textContent = localStorage.getItem("localStorageTestInfo3", "taskDetail");
+var saveBtn4 = document.querySelector("#saveBtnTask4");
+saveBtn4.addEventListener("click", function(event) {
+    event.preventDefault();
+    var localStorageTestInfo4 = {
+        taskDetail: text4.value.trim()
+    };
+    localStorage.setItem("localStorageTestInfo4", (localStorageTestInfo3.taskDetail));    
+  });
+text4.textContent = localStorage.getItem("localStorageTestInfo4", "taskDetail");
+var saveBtn4 = document.querySelector("#saveBtnTask4");
+saveBtn4.addEventListener("click", function(event) {
+    event.preventDefault();
+    var localStorageTestInfo4 = {
+        taskDetail: text4.value.trim()
+    };
+    localStorage.setItem("localStorageTestInfo4", (localStorageTestInfo4.taskDetail));    
+  });
+text4.textContent = localStorage.getItem("localStorageTestInfo4", "taskDetail");
+var saveBtn5 = document.querySelector("#saveBtnTask5");
+saveBtn5.addEventListener("click", function(event) {
+    event.preventDefault();
+    var localStorageTestInfo5 = {
+        taskDetail: text5.value.trim()
+    };
+    localStorage.setItem("localStorageTestInfo5", (localStorageTestInfo5.taskDetail));    
+  });
+text5.textContent = localStorage.getItem("localStorageTestInfo5", "taskDetail");
+var saveBtn6 = document.querySelector("#saveBtnTask6");
+saveBtn6.addEventListener("click", function(event) {
+    event.preventDefault();
+    var localStorageTestInfo6 = {
+        taskDetail: text6.value.trim()
+    };
+    localStorage.setItem("localStorageTestInfo6", (localStorageTestInfo6.taskDetail));    
+  });
+text6.textContent = localStorage.getItem("localStorageTestInfo6", "taskDetail");
+var saveBtn7 = document.querySelector("#saveBtnTask7");
+saveBtn7.addEventListener("click", function(event) {
+    event.preventDefault();
+    var localStorageTestInfo7 = {
+        taskDetail: text7.value.trim()
+    };
+    localStorage.setItem("localStorageTestInfo7", (localStorageTestInfo7.taskDetail));    
+  });
+text7.textContent = localStorage.getItem("localStorageTestInfo7", "taskDetail");
+var saveBtn8 = document.querySelector("#saveBtnTask8");
+saveBtn8.addEventListener("click", function(event) {
+    event.preventDefault();
+    var localStorageTestInfo8 = {
+        taskDetail: text8.value.trim()
+    };
+    localStorage.setItem("localStorageTestInfo8", (localStorageTestInfo8.taskDetail));    
+  });
+text8.textContent = localStorage.getItem("localStorageTestInfo8", "taskDetail");
+var saveBtn9 = document.querySelector("#saveBtnTask9");
+saveBtn9.addEventListener("click", function(event) {
+    event.preventDefault();
+    var localStorageTestInfo9 = {
+        taskDetail: text9.value.trim()
+    };
+    localStorage.setItem("localStorageTestInfo9", (localStorageTestInfo9.taskDetail));    
+  });
+text9.textContent = localStorage.getItem("localStorageTestInfo9", "taskDetail");
 
 
 
